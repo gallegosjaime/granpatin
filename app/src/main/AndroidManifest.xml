@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.proyectogranpatin">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProyectoGRANPATIN">
+        <activity
+            android:name=".actividades_consultar"
+            android:exported="false" />
+        <activity
+            android:name=".actividades_agregar"
+            android:exported="false" />
+        <activity
+            android:name=".medicamentos_consultar"
+            android:exported="false" />
+        <activity
+            android:name=".medicamentos_agregar"
+            android:exported="false" />
+        <activity
+            android:name=".pacientes_consultar"
+            android:exported="false" />
+        <activity
+            android:name=".pacientes_agregar"
+            android:exported="false" />
+        <activity
+            android:name=".Menu"
+            android:exported="false" />
+        <activity
+            android:name=".SingUp"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

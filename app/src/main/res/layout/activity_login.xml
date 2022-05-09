@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="88dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:elevation="5dp"
+        android:text="volver"
+        android:textColor="#fff"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="401dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="21dp"
+        android:foregroundGravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="70dp"
+            app:srcCompat="@drawable/microsoftteams_image__1_" />
+        android:padding="50dp"
+        android:src="@drawable/logo"/>
+
+        <EditText
+            android:id="@+id/et_correo_electronico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/input"
+            android:hint="Correo Electronico"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="#ccc" />
+
+        <EditText
+            android:id="@+id/et_contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/input"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="#ccc" />
+
+        <Button
+            android:id="@+id/iniciar_sesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/colorAccent"
+            android:elevation="5dp"
+            android:text="Iniciar Sesion"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

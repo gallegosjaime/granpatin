@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades_consultar">
+
+    <Button
+        android:id="@+id/eliminar"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="72dp"
+        android:background="@color/colorAccent"
+        android:elevation="5dp"
+        android:text="Aceptar"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/consulta_actividades"
+        android:layout_width="351dp"
+        android:layout_height="531dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:foregroundGravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="70dp"
+            app:srcCompat="@drawable/microsoftteams_image__1_" />
+
+        <TextView
+            android:id="@+id/txt_consultar_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paciente:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_consultar_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actividad:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_consulta_cantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hora:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_consultar_municipio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_consultar_municipio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lugar:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_consultar_tratamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duración:"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Eliminar"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="40dp"
+                android:background="@color/colorAccent"
+                android:elevation="5dp"
+                android:text="Eliminar"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/editar"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorAccent"
+                android:elevation="5dp"
+                android:text="Editar"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+        <![CDATA[
+
+
+
+
+        android:padding="50dp"
+        android:src="@drawable/logo"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="88dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorAccent"
+        android:elevation="5dp"
+        android:text="volver"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/buscar_pacientes"
+        android:layout_width="359dp"
+        android:layout_height="581dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:foregroundGravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08">
+
+        <TextView
+            android:id="@+id/txt_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Que actividad deseas consultar:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_buscar_pacientes"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/input"
+            android:hint="Buscar actividad..."
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="#ccc"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txt_consultar_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paciente:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_consultar_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actividad:"
+            android:textSize="20sp" /><![CDATA[
+
+
+
+
+
+
+
+
+        android:padding="50dp"
+        android:src="@drawable/logo"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

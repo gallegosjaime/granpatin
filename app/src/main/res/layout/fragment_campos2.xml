@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_campos2">
+
+    <LinearLayout
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soy un:"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radiobox"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Enfermero"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Enfermero" />
+
+            <RadioButton
+                android:id="@+id/Familiar"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:text="Familiar" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/campos_enfermero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/et_cedula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input"
+                android:hint="Cédula"
+                android:maxLength="10"
+                android:numeric="integer"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColorHint="#ccc" />
+
+            <EditText
+                android:id="@+id/et_institucion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/input"
+                android:hint="Institución ligada"
+                android:inputType="textCapSentences"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColorHint="#ccc" />
+
+            <EditText
+                android:id="@+id/et_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input"
+                android:hint="Teléfono"
+                android:maxLength="10"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:phoneNumber="true"
+                android:textColorHint="#ccc" />
+
+            <EditText
+                android:id="@+id/et_especialidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input"
+                android:hint="Especialidad"
+                android:inputType="textCapSentences"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColorHint="#ccc" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/campos_familiar"
+            android:layout_width="match_parent"
+            android:layout_height="262dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/et_edad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input"
+                android:hint="Edad"
+                android:maxLength="3"
+                android:numeric="integer"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColorHint="#ccc" />
+
+            <EditText
+                android:id="@+id/et_direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input"
+                android:hint="Direccion"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColorHint="#ccc" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:text="Segundo familiar de contacto:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_segundo_contacto_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="Nombre completo:"
+                android:inputType="textCapWords"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColorHint="#ccc" />
+
+            <EditText
+                android:id="@+id/et_segundo_contacto_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input"
+                android:hint="Telefono"
+                android:maxLength="10"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:phoneNumber="true"
+                android:textColorHint="#ccc" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

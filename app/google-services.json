@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1010803240701",
+    "project_id": "proyectogranpatin-6641f",
+    "storage_bucket": "proyectogranpatin-6641f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010803240701:android:11e4219614846d01cd1894",
+        "android_client_info": {
+          "package_name": "com.example.proyectogranpatin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010803240701-qt7clk8pfju0c9en1av0jfenksr3sben.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw6bVtJVKkdrAzDViLuUqsL2BwKF-fKIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010803240701-qt7clk8pfju0c9en1av0jfenksr3sben.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
